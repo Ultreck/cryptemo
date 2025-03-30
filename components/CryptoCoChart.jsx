@@ -113,10 +113,9 @@ const VirtualStockChart = ({ chartDatas, state }) => {
   const [info, setInfo] = useState(
     Array.from({ length: 1 }, (_, i) => ({
       name: `${i.toString()}s`,
-      price: 30 + Math.random() * 100,
-      sprice: (30 + Math.random() * 100)/5,
-    }))
-  );
+      price: 100 + Math.random() * 100,
+      sprice: (100 + Math.random() * 100)/5,
+    }))  );
 
   const generateRandomPrice = (prevPrice) => {
     const change = (Math.random() - 0.5) * 100;
