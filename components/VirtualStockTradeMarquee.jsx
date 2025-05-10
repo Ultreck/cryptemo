@@ -45,7 +45,6 @@ const VirtualStockTradeMarquee = () => {
   };
 
   useEffect(() => {
-    // Start animation
     controls.start({
       x: '-50%',
       transition: {
@@ -58,11 +57,10 @@ const VirtualStockTradeMarquee = () => {
   }, [controls]);
 
   const handleMouseEnter = () => {
-    controls.stop(); // Pause animation
+    controls.stop();
   };
 
   const handleMouseLeave = () => {
-    // Resume animation
     controls.start({
       x: '-50%',
       transition: {
