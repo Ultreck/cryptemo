@@ -104,8 +104,6 @@ console.log(theme);
         </RadialBarChart>
       </ChartContainer>
     </CardContent>
-    {/* <CardFooter className="flex-col gap-2 text-sm dark:bg-[#18181B]">
-    </CardFooter> */}
   </Card>
   )
 }
