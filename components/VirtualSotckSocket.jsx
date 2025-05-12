@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const code = 'NG';
 
 const VirtualStockSocket = ({ stockOrders, stock }) => {
-  // const [isClosed, setIsClosed] = useState(false);
+  // Getting the old countries endpoint from the backend
   const country = [...countries.africa, ...countries.global].find((c) => c.code === code);
 
   const marketOpenTime = '09:30:00';
@@ -21,6 +21,7 @@ const VirtualStockSocket = ({ stockOrders, stock }) => {
     let status;
     let isOpen;
 
+    // Managing the time function and the time frame from the frontend
     if (now < marketOpen) {
       targetTime = marketOpen;
       status = 'Market opens in: ';
