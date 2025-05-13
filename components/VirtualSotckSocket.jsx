@@ -21,7 +21,6 @@ const VirtualStockSocket = ({ stockOrders, stock }) => {
     let status;
     let isOpen;
 
-    // Managing the time function and the time frame from the frontend
     if (now < marketOpen) {
       targetTime = marketOpen;
       status = 'Market opens in: ';
