@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 const code = 'NG';
 
 const VirtualStockSocket = ({ stockOrders, stock }) => {
-  // Getting the old countries endpoint from the backend
   const country = [...countries.africa, ...countries.global].find((c) => c.code === code);
 
   const marketOpenTime = '09:30:00';
