@@ -1,5 +1,4 @@
 import { Avatar, Card, CardBody, CardHeader } from '@heroui/react';
-// import CountryFlag from '@/components/ui/CountryFlag.jsx';
 import countries from '@/lib/countries.js';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
